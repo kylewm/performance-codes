@@ -8,16 +8,16 @@ V = airspeed; % ft/s
 
 % CT = Thrust / (rho*(n^2)*(d^4))
 % thrust curve coefficients
-A2 = -0.1050;
-A1 = -0.0183;
-A0 = 0.0972;
+A2 = -0.11;
+A1 = 0;
+A0 = 0.0838;
 
 % CP = Power / (rho*(n^3)*(d^5))
 % power curve coefficients
 P3 = 0.0620;
 P2 = -0.1950;
-P1 = 0.0980;
-P0 = 0.0350;
+P1 = 0.1000;
+P0 = 0.0435;
 
 revs = [0:10:150];
 adv_vec = V./(revs.*D);
